@@ -14,7 +14,7 @@ export default function Header() {
             <div className="row flex-column ms-3">
               <div className="col nameAndTitle">
                 <h1>Jefferson Daley</h1>
-                <p>Full Stack Software Developer | Digital Marketing Expert</p>
+                <p>Full Stack Software Developer | Digital Marketing Expert </p>
               </div>
               <div className="col contact d-flex justify-content-between pt-2">
                 <p className="text-white">Connect with me:</p>

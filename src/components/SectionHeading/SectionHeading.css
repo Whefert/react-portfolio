@@ -1,0 +1,6 @@
+h3 {
+  text-decoration: underline;
+  text-decoration-color: #d98310;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}

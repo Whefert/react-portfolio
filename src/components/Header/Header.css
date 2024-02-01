@@ -1,0 +1,21 @@
+h1 {
+  color: white;
+}
+
+img {
+  width: 200px;
+}
+
+.nameAndTitle {
+  background-color: #d98310;
+}
+
+header {
+  background: url("../../assets/island_road.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  background-color: #083c5d;
+}

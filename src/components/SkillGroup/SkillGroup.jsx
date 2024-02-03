@@ -5,34 +5,28 @@ import {
   faCss3Alt,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
-export default function SkillGroup() {
+export default function SkillGroup({ skills }) {
+  console.log(skills);
   return (
-    <div className="col-6">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                HTML <FontAwesomeIcon icon={faHtml5} />
+    <div className="container">
+      <div className="row d-flex flex-row ">
+        <div className="col-6">
+          <ul className="list-group list-group-flush">
+            {skills.slice(0, 3).map((skill) => (
+              <li className="list-group-item">
+                {skill.skill} <FontAwesomeIcon icon={skill.icon} />
               </li>
-              <li class="list-group-item">
-                CSS <FontAwesomeIcon icon={faCss3Alt} />
+            ))}
+          </ul>
+        </div>
+        <div className="col-6">
+          <ul class="list-group list-group-flush">
+            {skills.slice(3, 6).map((skill) => (
+              <li className="list-group-item">
+                {skill.skill} <FontAwesomeIcon icon={skill.icon} />
               </li>
-              <li class="list-group-item">
-                JavaScript <FontAwesomeIcon icon={faJs} />
-              </li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                React <FontAwesomeIcon icon={faReact} />
-              </li>
-
-              <li class="list-group-item">JQuery</li>
-              <li class="list-group-item">Bootsrap</li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

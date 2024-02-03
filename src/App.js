@@ -3,7 +3,7 @@ import "./App.css";
 
 import Home from "./components/Pages/Home";
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -19,7 +19,7 @@ const routeDefinitions = createRoutesFromElements(
   </Route>
 );
 
-const router = createBrowserRouter(routeDefinitions);
+const router = createHashRouter(routeDefinitions);
 
 function App() {
   return <RouterProvider router={router} />;

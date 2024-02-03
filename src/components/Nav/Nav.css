@@ -1,3 +1,10 @@
 nav {
-  background-color: #328cc1;
+  background-color: var(--primary);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
 }

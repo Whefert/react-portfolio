@@ -1,4 +1,5 @@
 import "./Nav.css";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -20,24 +21,39 @@ export default function Nav() {
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav  me-sm-auto m-lg-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-uppercase text-white"
+                <NavLink
+                  className="nav-link active text-uppercase text-white"
                   aria-current="page"
-                  href="#"
+                  to="/"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase text-white" href="#">
+                <NavLink
+                  className="nav-link text-uppercase text-white"
+                  to="/projects"
+                >
                   Projects
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase text-white">Contact</a>
+                <NavLink
+                  className="nav-link text-uppercase text-white"
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase text-white">View my resume</a>
+                <NavLink
+                  className="nav-link text-uppercase text-white"
+                  to="https://drive.google.com/file/d/13wpdOCk41BoDJpbnzqvcDt9kIx3AW46T/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View my resume
+                </NavLink>
               </li>
             </ul>
           </div>

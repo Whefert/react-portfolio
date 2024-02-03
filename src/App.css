@@ -1,6 +1,12 @@
+:root {
+  --primary: #328cc1;
+  --secondary: #d98310;
+  --tertiary: #083c5d;
+  --highlight: #f3f3f3;
+}
+
 .App {
   text-align: center;
-
 }
 
 .App-logo {

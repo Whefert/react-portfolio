@@ -7,6 +7,10 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import { useState } from "react";
 
 const technologies = [...skills.map((skill) => skill.skill)];
+const featuredProject = projects.filter(
+  (project) => project.isFeatured === true
+);
+
 let searchTerms = [];
 
 function deriveProjects(terms) {
@@ -33,9 +37,7 @@ export default function Projects() {
 
   function handleFilterSelect(technology) {
     searchTerms.push(technology);
-    console.log("Search terms: " + searchTerms);
     setFilterTerms([...searchTerms]);
-    console.log("Filter terms: " + filterTerms);
   }
   function handleFilterDeSelect(technology) {
     searchTerms = [
@@ -44,7 +46,6 @@ export default function Projects() {
       }),
     ];
     setFilterTerms([...searchTerms]);
-    console.log("Filter terms: " + filterTerms);
   }
 
   return (
@@ -65,13 +66,13 @@ export default function Projects() {
                 <div className="col">
                   <SectionHeading text={"Featured Projects"} />
                   <Project
-                    isFeatured={projects[0].isFeatured}
-                    image={projects[0].image}
-                    name={projects[0].name}
-                    technologies={projects[0].technologies}
-                    description={projects[0].description}
-                    deployedURL={projects[0].deployedURL}
-                    gitHubURL={projects[0].gitHubURL}
+                    isFeatured={featuredProject[0].isFeatured}
+                    image={featuredProject[0].image}
+                    name={featuredProject[0].name}
+                    technologies={featuredProject[0].technologies}
+                    description={featuredProject[0].description}
+                    deployedURL={featuredProject[0].deployedURL}
+                    gitHubURL={featuredProject[0].gitHubURL}
                   />
                 </div>
                 <div className="col mt-4">

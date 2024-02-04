@@ -4,6 +4,8 @@ import it_mobile_app from "../assets/it_department_mobile_app.jpg";
 import daily_planner from "../assets/daily_planner.gif";
 import beach_search_engine from "../assets/beach_search_engine.gif";
 import biblio from "../assets/biblio.gif";
+import react_portfolio from "../assets/react-portfolio.gif";
+import bookkeeping_app from "../assets/bookkeeping_app.png";
 import {
   faReact,
   faHtml5,
@@ -67,7 +69,7 @@ export const skills = [
 
 export const projects = [
   {
-    isFeatured: true,
+    isFeatured: false,
     name: "Hospital-Management-WPF-App",
     image: hospital,
     technologies: ["C#", ".NET", "XAML", "MSSQL", "SQL"],
@@ -117,7 +119,7 @@ export const projects = [
     gitHubURL: "https://github.com/Whefert/jamaica-beach-search-engine",
   },
   {
-    isFeatured: false,
+    isFeatured: true,
     name: "Biblio",
     image: biblio,
     technologies: [
@@ -133,5 +135,33 @@ export const projects = [
       "Web app created to allow users to find the definition, pronunciation and usage examples of a word",
     deployedURL: "https://hillarym17.github.io/Biblio/",
     gitHubURL: "https://github.com/Whefert/Biblio",
+  },
+  {
+    isFeatured: false,
+    name: "React Portfolio",
+    image: react_portfolio,
+    technologies: [
+      "React",
+      "Bootstrap",
+      "Figma",
+      "GitHub",
+      "HTML5",
+      "CSS",
+      "JavaScript",
+    ],
+    description:
+      "Web app created to allow users to find the definition, pronunciation and usage examples of a word",
+    deployedURL: "https://whefert.github.io/react-portfolio/",
+    gitHubURL: "https://github.com/Whefert/react-portfolio",
+  },
+  {
+    isFeatured: false,
+    name: "Tkinter Bookkeeping App",
+    image: bookkeeping_app,
+    technologies: ["Tkinter", "Python", "SQL", "SQLLite"],
+    description:
+      "Desktop GUI Bookkeeping application that allows users to register, login, add new clients as well as receivable and payable records for those clients.",
+    deployedURL: "",
+    gitHubURL: "https://github.com/Whefert/bookkeeping-app",
   },
 ];

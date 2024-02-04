@@ -2,11 +2,13 @@
 
 ## Description
 
-Create a portfolio using React which will help set me apart from other developers whose portfolios do not use some of the latest technologies.
+Online portfolio of web and software development projects built using React.js.
 
-See demo of the application below.
+See link to the deployed application [here](https://whefert.github.io/react-portfolio/)
 
-See video demo of application here
+See a demo video demo of the application below:
+
+![[]("./src/assets/")](src/assets/react-portfolio.gif)
 
 ## Acceptance Criteria
 
@@ -70,7 +72,7 @@ N/A
 
 ## Usage
 
-Simply click the link to browse the website
+Simply click the link to the [deployed application](https://whefert.github.io/react-portfolio/) to browse the website
 
 ## Credits
 

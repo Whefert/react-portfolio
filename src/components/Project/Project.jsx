@@ -8,21 +8,12 @@ export default function Project({
   deployedURL,
   gitHubURL,
 }) {
-  const imgURL = `url(${image})`;
-
   return (
     <div className="d-flex flex-column flex-md-row">
-      <div
-        className="col-12 col-sm-6 projectImage"
-        // style={{
-        //   backgroundImage: imgURL,
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        // }}
-      >
+      <div className="col-12 col-sm-6">
         <img
           src={image}
-          alt="sdads"
+          alt={name}
           style={{
             height: "auto",
             width: "100%",
@@ -30,12 +21,16 @@ export default function Project({
           }}
         />
       </div>
-      <div className="col ps-3 ">
+      <div className="col ps-3 pt-3 pt-md-0">
         <p>
           <strong>{name}</strong>
         </p>
         <p>{technologies.toString().slice(0, 20).toString()}...</p>
-        <p>Description: {description.slice(0, 100).toString()}...</p>
+        <p>
+          Description:
+          {description.slice(0, 100).toString()}
+          ...
+        </p>
         {deployedURL ? (
           <p>
             <a href={deployedURL}>Link to deployed application</a>

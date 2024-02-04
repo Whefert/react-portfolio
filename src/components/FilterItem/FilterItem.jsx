@@ -1,4 +1,8 @@
-export default function FilterItem({ technology }) {
+export default function FilterItem({
+  technology,
+  onItemSelect,
+  onItemDeselect,
+}) {
   return (
     <div class="form-check">
       <input
@@ -6,6 +10,13 @@ export default function FilterItem({ technology }) {
         type="checkbox"
         value={technology}
         id={technology}
+        onChange={({ target }) => {
+          if (target.checked) {
+            onItemSelect(target.value);
+          } else {
+            onItemDeselect(target.value);
+          }
+        }}
       />
       <label class="form-check-label" for={technology}>
         {technology}

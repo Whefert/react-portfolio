@@ -3,6 +3,7 @@ import team from "../assets/team.jpg";
 import it_mobile_app from "../assets/it_department_mobile_app.jpg";
 import daily_planner from "../assets/daily_planner.gif";
 import beach_search_engine from "../assets/beach_search_engine.gif";
+import biblio from "../assets/biblio.gif";
 import {
   faReact,
   faHtml5,
@@ -11,6 +12,7 @@ import {
   faNode,
   faPhp,
   faPython,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faDatabase,
@@ -48,9 +50,9 @@ export const EducationData = [
 export const skills = [
   { skill: "HTML5", icon: faHtml5, isFrontend: true, isBackend: false },
   { skill: "CSS", icon: faCss3Alt, isFrontend: true, isBackend: false },
-  { skill: "JavaScript ES6", icon: faJs, isFrontend: true, isBackend: false },
+  { skill: "JavaScript", icon: faJs, isFrontend: true, isBackend: false },
   { skill: "React", icon: faReact, isFrontend: true, isBackend: false },
-  { skill: "JQuery", icon: faCode, isFrontend: true, isBackend: false },
+  { skill: "jQuery", icon: faCode, isFrontend: true, isBackend: false },
   { skill: "Bootstrap", icon: faCode, isFrontend: true, isBackend: false },
   { skill: "Node.js", icon: faNode, isFrontend: true, isBackend: true },
   { skill: "Kotlin", icon: faMobile, isFrontend: true, isBackend: true },
@@ -60,6 +62,7 @@ export const skills = [
   { skill: "Firebase", icon: faDatabase, isFrontend: true, isBackend: true },
   { skill: "Python", icon: faPython, isFrontend: true, isBackend: true },
   { skill: "C#", icon: faCode, isFrontend: true, isBackend: true },
+  { skill: "GitHub", icon: faGithub, isFrontend: false, isBackend: true },
 ];
 
 export const projects = [
@@ -67,7 +70,7 @@ export const projects = [
     isFeatured: true,
     name: "Hospital-Management-WPF-App",
     image: hospital,
-    technologies: ["C#", ".NET", "XAML", "MSSQL"],
+    technologies: ["C#", ".NET", "XAML", "MSSQL", "SQL"],
     description:
       "Hospital Management System that allows patients to be checked into the hospital. A full description of the patient is captured by the system whenever they are being checked into the hospital. The app allows a hospital staff member to log in, manage patients and manage doctor records.",
     deployedURL: "",
@@ -87,7 +90,7 @@ export const projects = [
     isFeatured: false,
     name: "Team Profile Generator",
     image: team,
-    technologies: ["Node.js", "Jest", "Inquirer.js", "MSSQL"],
+    technologies: ["Node.js", "Jest", "Inquirer.js"],
     description:
       "Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
     deployedURL: "",
@@ -107,10 +110,28 @@ export const projects = [
     isFeatured: false,
     name: "Jamaica Beach Search Engine",
     image: beach_search_engine,
-    technologies: ["PHP", "XAMP", "HTML5", "CSS", "JavaScript"],
+    technologies: ["PHP", "XAMP", "HTML5", "CSS", "JavaScript", "SQL"],
     description:
       "A search engine allowing users to find Jamaican beaches via searching for their names or the name of the parish in which they are located. On finding the beach, users are presented with additional information about the beach such as the cost of admission, whether it is licensed or not, opening/closing hours and a button to get directions.",
     deployedURL: "",
     gitHubURL: "https://github.com/Whefert/jamaica-beach-search-engine",
+  },
+  {
+    isFeatured: false,
+    name: "Biblio",
+    image: biblio,
+    technologies: [
+      "APIs",
+      "Bootstrap",
+      "Figma",
+      "GitHub",
+      "HTML5",
+      "CSS",
+      "JavaScript",
+    ],
+    description:
+      "Web app created to allow users to find the definition, pronunciation and usage examples of a word",
+    deployedURL: "https://hillarym17.github.io/Biblio/",
+    gitHubURL: "https://github.com/Whefert/Biblio",
   },
 ];

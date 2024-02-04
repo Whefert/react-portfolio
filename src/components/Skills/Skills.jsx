@@ -12,7 +12,7 @@ export default function Skills() {
       <SectionHeading text={"Skills"} />
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-md-6">
             <SkillGroup skills={frontEndSkills} />
           </div>
           <div className="col">

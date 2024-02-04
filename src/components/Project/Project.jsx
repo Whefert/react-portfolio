@@ -9,22 +9,32 @@ export default function Project({
   gitHubURL,
 }) {
   const imgURL = `url(${image})`;
-  console.log(imgURL);
+
   return (
-    <div className="d-flex">
+    <div className="d-flex flex-column flex-md-row">
       <div
-        className="col-6 projectImage"
-        style={{
-          backgroundImage: imgURL,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+        className="col-12 col-sm-6 projectImage"
+        // style={{
+        //   backgroundImage: imgURL,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
+      >
+        <img
+          src={image}
+          alt="sdads"
+          style={{
+            height: "auto",
+            width: "100%",
+            backgroundPosition: "center",
+          }}
+        />
+      </div>
       <div className="col ps-3 ">
         <p>
           <strong>{name}</strong>
         </p>
-        <p>{technologies.toString()}</p>
+        <p>{technologies.toString().slice(0, 20).toString()}...</p>
         <p>Description: {description.slice(0, 100).toString()}...</p>
         {deployedURL ? (
           <p>

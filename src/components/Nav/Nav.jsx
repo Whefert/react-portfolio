@@ -19,7 +19,7 @@ export default function Nav() {
           </button>
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav  me-sm-auto m-lg-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-sm-auto m-lg-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <NavLink
                   className="nav-link active text-uppercase text-white"

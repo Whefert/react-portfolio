@@ -10,7 +10,7 @@ export default function Home() {
       <Header></Header>
       <main className="container mt-4">
         <div className="row">
-          <Education col="col-4" />
+          <Education col=" col-12 col-md-4" />
           <div className="col">
             <AboutMe />
             <Skills />

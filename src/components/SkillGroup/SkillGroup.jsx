@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SkillGroup({ skills }) {
-  console.log(skills);
   return (
     <div className="container">
       <div className="row d-flex flex-row ">

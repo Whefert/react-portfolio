@@ -45,7 +45,7 @@ export default function Nav() {
                   Contact
                 </NavLink>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <NavLink
                   className="nav-link text-uppercase text-white"
                   to="https://drive.google.com/file/d/13wpdOCk41BoDJpbnzqvcDt9kIx3AW46T/view?usp=sharing"
@@ -54,7 +54,7 @@ export default function Nav() {
                 >
                   View my resume
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

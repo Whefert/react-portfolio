@@ -2,6 +2,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
 import SectionHeading from "../SectionHeading/SectionHeading";
+
 export default function Contact() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Contact() {
         <div className="row">
           <div className="col mt-3">
             <SectionHeading text={"Get In Touch"} />
+
             <Form />
           </div>
           <div className="col text-center">

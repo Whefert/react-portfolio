@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.6e98726e.css",
-    "main.js": "/react-portfolio/static/js/main.e42a5f70.js",
+    "main.js": "/react-portfolio/static/js/main.1b05165e.js",
     "static/js/787.cf482a7c.chunk.js": "/react-portfolio/static/js/787.cf482a7c.chunk.js",
     "static/media/react-portfolio.gif": "/react-portfolio/static/media/react-portfolio.26ba518c881e5c6a691b.gif",
     "static/media/beach_search_engine.gif": "/react-portfolio/static/media/beach_search_engine.f3229d0a468583ba4d22.gif",
@@ -15,14 +15,13 @@
     "static/media/jefferson_daley.jpg": "/react-portfolio/static/media/jefferson_daley.2f2cda2b2901ab199fb6.jpg",
     "static/media/it_department_mobile_app.jpg": "/react-portfolio/static/media/it_department_mobile_app.b9861c50b0422c077ed6.jpg",
     "static/media/bookkeeping_app.png": "/react-portfolio/static/media/bookkeeping_app.c5cc39a27f9295912b7a.png",
-    "static/media/logo.svg": "/react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-portfolio/index.html",
     "main.6e98726e.css.map": "/react-portfolio/static/css/main.6e98726e.css.map",
-    "main.e42a5f70.js.map": "/react-portfolio/static/js/main.e42a5f70.js.map",
+    "main.1b05165e.js.map": "/react-portfolio/static/js/main.1b05165e.js.map",
     "787.cf482a7c.chunk.js.map": "/react-portfolio/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e98726e.css",
-    "static/js/main.e42a5f70.js"
+    "static/js/main.1b05165e.js"
   ]
 }

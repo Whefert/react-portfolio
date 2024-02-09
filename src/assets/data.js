@@ -43,7 +43,7 @@ export const EducationData = [
   },
   {
     program: "BA Mass Communication & Media Studies, Minor Marketng",
-    school: "edX | UK Gov SkiCaldwell University",
+    school: "Caldwell University",
     completionDate: "Dec 2016",
     GPA: "magna cum laude",
   },
